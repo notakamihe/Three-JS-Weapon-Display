@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Share Tech Mono');
+
+body {
+  margin: 0
+}
+
+#weapon-select {
+  background-color: #0004;
+  padding: 8px;
+  border: 2px solid #fff;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Share Tech Mono';
+  text-transform: uppercase;
+}
+
+.weapon-option {
+  background-color: #000;
+  padding: 16px;
+  outline: none;
+  color: #fff6;
+  border-radius: 5px;
+}
+
+.controls {
+  background-color: transparent;
+  margin: 12px;
+  color: #fff;
+  font-family: 'Share Tech Mono';
+  text-transform: uppercase;
+}
+
+kbd {
+  border: 2px solid #fff;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin: 4px;
+  border-radius: 5px;
+}
