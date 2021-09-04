@@ -12,6 +12,7 @@ const light = new THREE.PointLight(0xffffff, 10, 500)
 let weapon
 let autoRotate = true
 let value = getRandomWeapon()
+let hideUI = false
 
 renderer.setSize(window.innerWidth, window.innerHeight)
 document.body.appendChild(renderer.domElement)
@@ -135,8 +136,14 @@ function removeWeapon() {
 animate()
 
 document.addEventListener("keypress", function(e) {
-  if (e.key.toLowerCase() == " ")
+  if (e.key.toLowerCase() === " ")
     autoRotate = !autoRotate
+
+  if (e.key.toLowerCase() === "u") {
+    hideUI = !hideUI
+    const ui = document.querySelector("#ui")
+    ui.style.display = hideUI ? "none" : "initial"
+  }
 })
 
 document.addEventListener("keydown", function(e) {
